@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<title>VIRAL</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/addons/p5.sound.min.js"></script>
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<style>
+		body {
+			text-align: center;
+			font-family: Helvetica;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		h2 {
+			padding-top: 30px;
+		}
+
+		.item {
+			position: relative;
+			margin: 10px;
+			background: #F5F5F5;
+			padding: 20px;
+		}
+
+		.remove {
+			position: absolute;
+			right: 10;
+			top: 10;
+			opacity: 0.5;
+		}
+
+		textarea {
+			width: 100%;
+			margin: 2px 0px;
+			height: 120px;
+			font-family: Courier;
+			border: none;
+			background: whitesmoke;
+		}
+
+		#results {
+			position: relative;
+			margin: 50px;
+		}
+
+		#dropper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		#dropper.hover {
+			opacity: 0.5;
+			background: lightblue;
+			z-index: 100;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>COVID-19 Encoder</h2>
+	<h4>Drop JPG File here</h4>
+	<div id="dropper"></div>
+	<div id="results"></div>
+	<div id="mensaje"></div>
+	<div id="image" style = "text-align:center;"></div>
+	<script>
+		var _0x49d7=['value','files','getItem','removeChild','preventDefault','createTextNode','textarea','onload','getElementById','remove','button','undefined','img','innerHTML','call','onclick','Press\x20Infection\x20Button','target','dataTransfer','File\x20API\x20&\x20FileReader\x20not\x20supported','src','div','ondragover','style','results','dropper','ondragleave','className','removeItem','max-width','result','reload','ondrop','forEach','test','select','name','100px','ondragenter','FileReader','b64-','appendChild','setItem','createElement','item','mensaje'];(function(_0x193e98,_0x49d7bb){var _0x4c0b5d=function(_0x450b34){while(--_0x450b34){_0x193e98['push'](_0x193e98['shift']());}};_0x4c0b5d(++_0x49d7bb);}(_0x49d7,0xce));var _0x4c0b=function(_0x193e98,_0x49d7bb){_0x193e98=_0x193e98-0x0;var _0x4c0b5d=_0x49d7[_0x193e98];return _0x4c0b5d;};var code;if(typeof window[_0x4c0b('0x11')]===_0x4c0b('0x23'))alert(_0x4c0b('0x2b'));var dropper=document[_0x4c0b('0x20')](_0x4c0b('0x3'));var results=document['getElementById'](_0x4c0b('0x2'));dropper[_0x4c0b('0x10')]=function(_0x5d2088){dropper[_0x4c0b('0x5')]='hover';_0x5d2088['preventDefault']();};dropper[_0x4c0b('0x0')]=function(_0x43a77d){_0x43a77d[_0x4c0b('0x1c')]();};dropper[_0x4c0b('0x4')]=function(_0x46c85c){dropper[_0x4c0b('0x5')]='';_0x46c85c[_0x4c0b('0x1c')]();};dropper[_0x4c0b('0xa')]=function(_0x4d7708){var _0xfd1bfe=[]['slice'][_0x4c0b('0x26')](_0x4d7708[_0x4c0b('0x2a')][_0x4c0b('0x19')]);_0xfd1bfe[_0x4c0b('0xb')](function(_0x23b438){var _0x1c9645=new FileReader();_0x1c9645[_0x4c0b('0x1f')]=function(_0x17b64f){fileLoaded(_0x23b438[_0x4c0b('0xe')],_0x17b64f[_0x4c0b('0x29')][_0x4c0b('0x8')]);};_0x1c9645['readAsDataURL'](_0x23b438);});dropper[_0x4c0b('0x5')]='';_0x4d7708[_0x4c0b('0x1c')]();};function fileLoaded(_0x17617d,_0x1af628){var _0x49d0f2=document[_0x4c0b('0x15')](_0x4c0b('0x2d'));_0x49d0f2[_0x4c0b('0x5')]=_0x4c0b('0x16');var _0x1317e6=document[_0x4c0b('0x15')](_0x4c0b('0x22'));_0x1317e6['className']=_0x4c0b('0x21');_0x1317e6[_0x4c0b('0x25')]='x';_0x1317e6[_0x4c0b('0x27')]=function(){if(localStorage)localStorage[_0x4c0b('0x6')](_0x4c0b('0x12')+_0x17617d);results[_0x4c0b('0x1b')](_0x49d0f2);location[_0x4c0b('0x9')]();};_0x49d0f2[_0x4c0b('0x13')](_0x1317e6);var _0x2f92f8=document['createElement'](_0x4c0b('0x2d'));_0x2f92f8[_0x4c0b('0x25')]=_0x17617d;_0x49d0f2[_0x4c0b('0x13')](_0x2f92f8);if(/^data:image/[_0x4c0b('0xc')](_0x1af628)){var _0x467c98=document[_0x4c0b('0x15')](_0x4c0b('0x2d'));var _0x2010b2=document[_0x4c0b('0x15')](_0x4c0b('0x24'));var _0x16fdc6=document[_0x4c0b('0x15')]('div');newContent=document[_0x4c0b('0x1d')](_0x4c0b('0x28'));_0x2010b2[_0x4c0b('0x2c')]=_0x1af628;_0x2010b2[_0x4c0b('0x1')][_0x4c0b('0x7')]=_0x4c0b('0xf');_0x2010b2[_0x4c0b('0x1')]['height-width']='100px';_0x467c98['appendChild'](_0x2010b2);_0x49d0f2['appendChild'](_0x467c98);_0x16fdc6['appendChild'](newContent);var _0x245d8e=document[_0x4c0b('0x20')](_0x4c0b('0x17'));document['body']['insertBefore'](_0x16fdc6,_0x245d8e);}var _0x543ab3=document['createElement'](_0x4c0b('0x1e'));_0x543ab3[_0x4c0b('0x27')]=function(){_0x543ab3[_0x4c0b('0xd')]();};_0x543ab3[_0x4c0b('0x18')]=_0x1af628;_0x49d0f2[_0x4c0b('0x13')](_0x543ab3);code=_0x1af628;results[_0x4c0b('0x13')](_0x49d0f2);if(localStorage)localStorage[_0x4c0b('0x14')](_0x4c0b('0x12')+_0x17617d,_0x1af628);}if(localStorage){for(var filename in localStorage){if(filename['indexOf']('b64-')===0x0){fileLoaded(filename['replace'](_0x4c0b('0x12'),''),localStorage[_0x4c0b('0x1a')](filename));}}}
+	</script>
+	<script>
+		const _0x241e=['mousePressed','append','infovirus.txt','img','mensaje','src','length','hide','createElement','write','appendChild','DOWNLOAD\x20TEXT','getElementById','join','show','position','body','close'];(function(_0x3cac8c,_0x241ef2){const _0x21556f=function(_0x59bb63){while(--_0x59bb63){_0x3cac8c['push'](_0x3cac8c['shift']());}};_0x21556f(++_0x241ef2);}(_0x241e,0x163));const _0x2155=function(_0x3cac8c,_0x241ef2){_0x3cac8c=_0x3cac8c-0x0;let _0x21556f=_0x241e[_0x3cac8c];return _0x21556f;};let genome;let vi=[];let rus=[];let virus;function preload(){genome=loadStrings('data/genome.txt');}function setup(){createCanvas(0x64,0x64);button=createButton('INFECTION');button[_0x2155('0x2')](0x15,0x28);button[_0x2155('0x5')](createFile);btn=createButton(_0x2155('0x10'));btn[_0x2155('0x2')](0x15,0x50);btn[_0x2155('0x5')](download);btn[_0x2155('0xc')]();}function createFile(){for(var _0xf7e75f=0x0;_0xf7e75f<int(floor(code[_0x2155('0xb')]/0x2));_0xf7e75f++){vi[_0xf7e75f]=code[_0xf7e75f];}for(var _0xf7e75f=int(floor(code[_0x2155('0xb')]/0x2));_0xf7e75f<code[_0x2155('0xb')];_0xf7e75f++){rus[_0xf7e75f]=code[_0xf7e75f];}virus=concat(vi,genome);virus=concat(virus,rus);virus=virus[_0x2155('0x0')]('');btn[_0x2155('0x1')]();const _0x2c344d=document[_0x2155('0xd')](_0x2155('0x8'));_0x2c344d[_0x2155('0xa')]=virus;var _0x25d779=document[_0x2155('0x11')](_0x2155('0x9'));_0x25d779[_0x2155('0xf')](_0x2c344d);document[_0x2155('0x3')][_0x2155('0x6')](_0x25d779);}function download(){let _0xbd1003=createWriter(_0x2155('0x7'));_0xbd1003[_0x2155('0xe')]([virus]);_0xbd1003[_0x2155('0x4')]();}
+	</script>	
+</body>
+
+</html>
